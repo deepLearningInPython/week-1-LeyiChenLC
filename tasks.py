@@ -2,6 +2,7 @@ import numpy
 
 
 
+
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
 # Don't import additional packages. Numpy suffices.
@@ -16,13 +17,7 @@ import numpy
 # -----------------------------------------------
 
 def step(num):
-    if num > 0:
-        return 1
-    else:
-        return -1
-
-print(step(1))
-
+    return 1 if num > 0 else -1
 
 # -----------------------------------------------
 
@@ -36,9 +31,8 @@ print(step(1))
 
 # Your code here:
 # -----------------------------------------------
-def ReLu():
-    pass
-
+def ReLu(num, cutoff = 0):
+    return numpy.where(num<cutoff, cutoff, num)
 
 # -----------------------------------------------
 
@@ -53,8 +47,7 @@ def ReLu():
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer():
-    pass
+def neural_net_layer(num1, num2):
+    a = numpy.dot(num1, num2)
+    return ReLu(a)
 
-
-# ------------------------------------------
