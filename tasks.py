@@ -1,8 +1,5 @@
 import numpy
 
-
-
-
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
 # Don't import additional packages. Numpy suffices.
@@ -31,8 +28,10 @@ def step(num):
 
 # Your code here:
 # -----------------------------------------------
+import numpy
+
 def ReLu(num, cutoff = 0):
-    return numpy.where(num<cutoff, cutoff, num)
+    return numpy.where(num < cutoff, cutoff, num)
 
 # -----------------------------------------------
 
