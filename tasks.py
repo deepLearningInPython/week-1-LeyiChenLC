@@ -30,7 +30,7 @@ def step(num):
 # -----------------------------------------------
 import numpy
 
-def ReLU(num, cutoff = 0):
+def ReLu(num, cutoff = 0):
     return numpy.where(num < cutoff, cutoff, num)
 
 # -----------------------------------------------
@@ -48,5 +48,5 @@ def ReLU(num, cutoff = 0):
 
 def neural_net_layer(num1, num2):
     a = numpy.dot(num1, num2)
-    return ReLU(a)
+    return ReLu(a)
 
